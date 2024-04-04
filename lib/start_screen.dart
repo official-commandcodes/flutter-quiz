@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen(this.switchScreen, {super.key});
@@ -17,11 +18,12 @@ class StartScreen extends StatelessWidget {
             color: const Color.fromARGB(112, 255, 255, 255),
           ),
           const SizedBox(height: 80),
-          const Text(
+          Text(
             'Learn Flutter the fun way!',
-            style: TextStyle(
-              fontSize: 25,
-              color: Color(0xFFF2D4F4),
+            style: GoogleFonts.poppins(
+              color: const Color.fromARGB(255, 217, 162, 244),
+              fontSize: 24,
+              fontWeight: FontWeight.w500,
             ),
           ),
           const SizedBox(height: 30),
@@ -31,7 +33,14 @@ class StartScreen extends StatelessWidget {
               foregroundColor: Colors.white,
             ),
             icon: const Icon(Icons.arrow_right_alt),
-            label: const Text('Start Quiz'),
+            label: Text(
+              'Start Quiz',
+              style: GoogleFonts.poppins(
+                color: const Color.fromARGB(255, 217, 162, 244),
+                fontSize: 16,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
           )
         ],
       ),
